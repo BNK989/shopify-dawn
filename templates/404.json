@@ -1,8 +1,15 @@
 {
+  "name": "template 404",
+  "layout": "custom_theme", //layout for the page
+  "wrapper": "div#404_template_id.custom-class[custom-attribute='custom-value']",
   "sections": {
-    "main": {
-      "type": "main-404"
+    "template-404-test": { //template name AKA layout
+      "type": "test-404",
     }
+    // "main": {
+    //   "type": "test-404"//connects to template
+    //   // "type": "main-404"//connects to template
+    // }
   },
   "order": [
     "main"
