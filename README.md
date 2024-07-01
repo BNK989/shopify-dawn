@@ -9,6 +9,7 @@ Shopify Dawn theme with Tailwind CSS &amp; Prettier integrations
 The starter theme includes an integration of:
 
 ## [Tailwind CSS](https://tailwindcss.com/)
+### to start: npx tailwindcss -i ./assets/app-tailwind.css -o ./assets/app.css --watch
 
 - [Configured](https://markustripp.medium.com/extend-shopify-dawn-theme-with-a-custom-tailwind-css-carousel-section-e3efe3ecf18e) to use `prefix: twcss-` in order to not clash with Dawn’s existing styles
 
