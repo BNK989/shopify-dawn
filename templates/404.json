@@ -1,17 +1,26 @@
 {
   "name": "template 404",
   "layout": "custom_theme", //layout for the page
-  "wrapper": "div#404_template_id.custom-class[custom-attribute='custom-value']",
+  // "wrapper": "div#404_template_id.custom-class[custom-attribute='custom-value']",
   "sections": {
-    "template-404-test": { //template name AKA layout
-      "type": "test-404",
-    }
-    // "main": {
-    //   "type": "test-404"//connects to template
-    //   // "type": "main-404"//connects to template
+    // "template-404-test": { //template name AKA layout
+    //   "type": "test-404",
     // }
+    "main": {
+      "type": "test-404"//connects to template
+      // "type": "main-404"//connects to template
+    },
+    "template-main-404": {
+      "type": "main-404"
+    },
+    "template-test-404": {
+      "type": "test-404"
+    }
+
   },
   "order": [
-    "main"
+    "main",
+    "template-main-404",
+    "template-test-404"
   ]
 }

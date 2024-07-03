@@ -11,7 +11,7 @@ The starter theme includes an integration of:
 ## [Tailwind CSS](https://tailwindcss.com/)
 ### to start: npx tailwindcss -i ./assets/app-tailwind.css -o ./assets/app.css --watch
 
-- [Configured](https://markustripp.medium.com/extend-shopify-dawn-theme-with-a-custom-tailwind-css-carousel-section-e3efe3ecf18e) to use `prefix: twcss-` in order to not clash with Dawn’s existing styles
+- [Configured](https://markustripp.medium.com/extend-shopify-dawn-theme-with-a-custom-tailwind-css-carousel-section-e3efe3ecf18e) to use `prefix: tw-` in order to not clash with Dawn’s existing styles
 
 ## [Trellis' Prettier config](https://www.npmjs.com/package/@trelliscommerce/prettier-config) with Husky pre-commit hooks
 
@@ -101,14 +101,14 @@ These secret values are used in the `ci.yml` GitHub workflow:
 3. Pull down changes from the theme editor:
    `shopify theme pull -d`
 
-4. Anytime you add a Tailwind CSS class (remember to prefix it with twcss-), run the CLI tool to scan your template files for classes and build your CSS to assets/app.css:
+4. Anytime you add a Tailwind CSS class (remember to prefix it with tw-), run the CLI tool to scan your template files for classes and build your CSS to assets/app.css:
    `npx tailwindcss -i ./assets/app-tailwind.css -o ./assets/app.css --watch`
 
 - Run this command in a separate terminal, so it will continue to run while you are developing.
 - Note that using a Tailwind CSS class without a space afterward when followed by a liquid tag causes compiling issues:
-`lg:!twcss-px-[32px]{% endif %}'>`
+`lg:!tw-px-[32px]{% endif %}'>`
 But this does work:
-`lg:!twcss-px-[32px] {% endif %}'>`
+`lg:!tw-px-[32px] {% endif %}'>`
 
 5. Launch the local development server:
    `shopify theme dev`
